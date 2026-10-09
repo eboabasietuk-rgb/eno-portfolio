@@ -106,3 +106,7 @@ The public site returned HTTP 200 for all pages and assets tested. W3C Link Chec
 ## Real portrait update
 
 The user-supplied photograph is assets/images/eno-profile.jpg (250×312). The .profile-photo wrapper caps its width at 250px and the image uses height:auto to preserve proportions. Its alt text is Portrait of Eno Etuk. The real photograph is now complete; references to pending personal media apply to the video, poster, captions, and transcript.
+
+## Phase 7 Canvas handoff
+
+Upload INFR3120_Assignment_1.zip as the website source package and your separate 15–20-minute webcam presentation recording in the Canvas upload fields required by the assignment. Provide the live website and public repository URLs in the designated fields or submission comments. The 56-second introduction is already inside the website ZIP and hosted on About; it is not the long assignment presentation. The long presentation file was not provided to Codex and is not included or publicly hosted. Exact Canvas upload types, size limits, and any additional rubric items must be checked against the actual submission page, which has not been provided. This package is not certified submission-ready while captions/transcript, public contact details, manual checks, and academic-integrity review remain outstanding.
