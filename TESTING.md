@@ -104,7 +104,7 @@ The ZIP is a source review snapshot, not a submission-ready claim. Local qa evid
 
 ## Real portrait update
 
-The supplied PNG was converted to JPEG at its original 250×312 dimensions. About now uses assets/images/eno-profile.jpg and alt="Portrait of Eno Etuk". Browser checks at 320, 768, and 1440px confirmed the image loaded, rendered at 250×312 without distortion, and caused no horizontal overflow. The introduction video remains a labelled placeholder. Earlier photo-placeholder results above are historical.
+The supplied PNG was converted to JPEG at its original 250×312 dimensions. About now uses assets/images/eno-profile.jpg and alt="Portrait of Enoabasi Etuk". Browser checks at 320, 768, and 1440px confirmed the image loaded, rendered at 250×312 without distortion, and caused no horizontal overflow. The introduction video remains a labelled placeholder. Earlier photo-placeholder results above are historical.
 
 ## Phase 7 media checks
 

@@ -16,7 +16,7 @@ Before recording, open the live site, source editor, TESTING.md, and repository 
 
 ## 0:00–1:00 — Purpose and scope
 
-Open https://eboabasietuk-rgb.github.io/eno-portfolio/. Explain: “This portfolio introduces me, Eno Etuk, and my interests in software, AI, games, and entrepreneurship. It uses four separate HTML pages and a shared stylesheet. The contact form is a validation demonstration.” State that the personal media are still placeholders.
+Open https://eboabasietuk-rgb.github.io/eno-portfolio/. Explain: “This portfolio introduces me, Enoabasi Etuk, and my interests in software, AI, games, and entrepreneurship. It uses four separate HTML pages and a shared stylesheet. The contact form is a validation demonstration.” State that the personal media are still placeholders.
 
 ## 1:00–3:00 — Four-page tour
 
@@ -281,7 +281,7 @@ This is for the short About-page video. Target roughly 100–125 words at a comf
 
 | Time | Cue | Points to express naturally |
 | --- | --- | --- |
-| 0–10 seconds | Introduce yourself | “Hi, I'm Eno Etuk.” Say you are a student interested in technology and building useful digital products. |
+| 0–10 seconds | Introduce yourself | “Hi, I'm Enoabasi Etuk.” Say you are a student interested in technology and building useful digital products. |
 | 10–25 seconds | Technical interests | Software/web development, artificial intelligence, and games. Mention enjoying experiments and creative solutions to everyday problems. |
 | 25–40 seconds | Projects and entrepreneurship | Briefly mention developing Wevelo and exploring the O1O game project. Describe an interest in turning ideas into products, without claiming launches or finished features. |
 | 40–50 seconds | Personal interests | Cars, gaming, business, and creative media. Choose the interests you can speak about comfortably. |

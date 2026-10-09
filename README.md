@@ -1,4 +1,4 @@
-# Eno Etuk — Developer & Entrepreneur
+# Enoabasi Etuk — Developer & Entrepreneur
 
 ## Phase 7 current media status (supersedes earlier placeholder notes)
 
@@ -105,7 +105,7 @@ The public site returned HTTP 200 for all pages and assets tested. W3C Link Chec
 
 ## Real portrait update
 
-The user-supplied photograph is assets/images/eno-profile.jpg (250×312). The .profile-photo wrapper caps its width at 250px and the image uses height:auto to preserve proportions. Its alt text is Portrait of Eno Etuk. The real photograph is now complete; references to pending personal media apply to the video, poster, captions, and transcript.
+The user-supplied photograph is assets/images/eno-profile.jpg (250×312). The .profile-photo wrapper caps its width at 250px and the image uses height:auto to preserve proportions. Its alt text is Portrait of Enoabasi Etuk. The real photograph is now complete; references to pending personal media apply to the video, poster, captions, and transcript.
 
 ## Phase 7 Canvas handoff
 
