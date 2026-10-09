@@ -1,0 +1,103 @@
+/* AI-assisted CSS. No lecture reference supplied. See ATTRIBUTION.md. */
+/* 1. Shared palette and predictable sizing. */
+:root {
+  color-scheme: dark;
+  --background: #0c0c10;
+  --surface: #18181f;
+  --text: #f5f5f7;
+  --muted: #babac6;
+  --accent: #b7a1ff;
+  --border: #363640;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--text); font-family: Arial, Helvetica, sans-serif; line-height: 1.65; }
+a { color: inherit; text-underline-offset: 0.25em; }
+a:hover { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.container { width: 90%; max-width: 1120px; margin-inline: auto; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.15; }
+h1 { font-size: clamp(2.5rem, 6vw, 5.25rem); letter-spacing: -0.045em; margin-bottom: 1.5rem; }
+h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -0.03em; }
+h3 { font-size: 1.25rem; }
+p { color: var(--muted); }
+/* 2. Keyboard access and navigation, using Grid and normal flow. */
+.skip-link { position: absolute; top: -100px; left: 1rem; padding: 0.75rem 1rem; background: var(--text); color: var(--background); z-index: 10; }
+.skip-link:focus { top: 1rem; }
+.site-header { border-bottom: 1px solid var(--border); }
+.header-layout { padding-block: 1.5rem; }
+.brand { font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+.brand span, .accent { color: var(--accent); }
+nav ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem 1.2rem; list-style: none; padding: 0; margin: 1rem 0 0; }
+nav a { display: inline-block; padding-block: 0.4rem; color: var(--muted); text-decoration: none; }
+nav a[aria-current="page"] { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+/* 3. Home introduction and links. The 125-degree gradient fades into black. */
+.hero { padding: 4.5rem 0 4rem; background: linear-gradient(125deg, #21192f 0%, #0c0c10 65%); }
+.eyebrow { color: var(--accent); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1.5rem; }
+.intro { max-width: 640px; font-size: 1.125rem; }
+.actions { margin-top: 2rem; }
+.button { display: inline-block; padding: 0.85rem 1.2rem; margin: 0 0.65rem 0.75rem 0; border: 1px solid var(--border); border-radius: 6px; font-weight: 700; text-decoration: none; transition: background-color 160ms, border-color 160ms; }
+.button-primary { background: var(--accent); border-color: var(--accent); color: var(--background); }
+.button-primary:hover { background: #cbbbff; color: var(--background); }
+.button-secondary:hover { background: var(--surface); border-color: var(--accent); }
+.hero-note { font-size: 0.875rem; margin: 1.5rem 0 0; }
+/* 4. Interest cards and project invitation. */
+.interests { padding-block: 3.5rem; border-top: 1px solid var(--border); }
+.section-heading { max-width: 600px; margin-bottom: 2rem; }
+.section-heading h2 { margin-bottom: 1rem; }
+.card-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.card { padding: 1.75rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+.card-number { color: var(--accent); font-size: 0.8rem; margin-bottom: 2rem; }
+.card p:last-child { margin-bottom: 0; }
+.project-invitation { padding: 2rem; margin-bottom: 4rem; border: 1px solid var(--border); border-radius: 10px; background: linear-gradient(110deg, #21192f, #18181f); }
+.project-invitation h2 { margin-bottom: 1rem; }
+.text-link { color: var(--accent); font-weight: 700; }
+/* 5. Footer and shared inner-page styles. */
+.site-footer { padding-block: 1.5rem; border-top: 1px solid var(--border); font-size: 0.875rem; }
+.footer-layout p { margin-bottom: 0.5rem; }
+.page-intro { padding-block: 4rem; }
+.media-placeholders { max-width: 720px; padding-bottom: 3rem; }
+figure { margin: 2rem 0; }
+img, video { display: block; width: 100%; height: auto; border-radius: 10px; }
+figcaption { color: var(--muted); margin-top: 0.75rem; }
+/* 6. Tablet: horizontal navigation, two columns where space permits. */
+@media (min-width: 768px) {
+  .header-layout { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; }
+  nav ul { grid-template-columns: repeat(4, auto); margin: 0; }
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-layout { display: grid; grid-template-columns: 1fr auto; gap: 1rem; }
+}
+/* 7. Desktop: three cards and a two-column project invitation. */
+@media (min-width: 1024px) {
+  .hero { padding-block: 6.5rem; }
+  .card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .project-invitation { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; padding: 2.5rem; }
+  .project-invitation p:last-child { margin-bottom: 0; }
+}
+/* 8. Respect reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+}
+
+/* 9. About, Projects, and Contact reuse the shared palette and cards. */
+.reading-width { max-width: 720px; }
+.page-intro { background: linear-gradient(125deg, #21192f, #0c0c10 75%); }
+.project-grid { padding-bottom: 4rem; }
+.project-grid h2 { font-size: 1.5rem; letter-spacing: -0.02em; }
+.project-type { display: block; font-size: 1rem; line-height: 1.5; color: var(--muted); margin-top: 0.5rem; }
+.contact-panel { max-width: 800px; margin-bottom: 4rem; padding: 1.5rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+.form-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; margin-block: 2rem; }
+.field { min-width: 0; }
+label { display: block; font-weight: 700; margin-bottom: 0.5rem; }
+input, textarea { width: 100%; padding: 0.85rem; border: 1px solid #858591; border-radius: 6px; background: var(--background); color: var(--text); font: inherit; }
+textarea { resize: vertical; min-height: 10rem; }
+.field-help { font-size: 0.875rem; margin: 0.5rem 0 0; }
+button { font: inherit; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+#form-status { margin-bottom: 0; }
+@media (min-width: 768px) {
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .field-wide { grid-column: 1 / -1; }
+  .contact-panel { padding: 2rem; }
+}

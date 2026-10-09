@@ -1,0 +1,1 @@
+No video supplied. Add your own 45–60-second introduction as eno-introduction.mp4, then add a source element inside the existing video element in about.html. Add reviewed captions as a WebVTT track and provide a transcript. Replace the placeholder poster with your own image. Do not claim video playback is tested before adding and testing real media.

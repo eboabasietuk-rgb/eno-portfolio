@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- AI-assisted scaffold and implementation. See ATTRIBUTION.md. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eno Etuk’s personal portfolio exploring software, artificial intelligence, games, and entrepreneurship.">
+  <title>Contact | Eno Etuk — Developer &amp; Entrepreneur</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <!-- 1. Shared header: skip link, identity, and four-page navigation. -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-layout">
+      <a class="brand" href="index.html" aria-label="Eno Etuk home">Eno Etuk<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- 2. Unique page content. -->
+  <main id="main-content" class="container" tabindex="-1">
+    <section class="page-intro" aria-labelledby="page-heading">
+      <p class="eyebrow">Start a conversation</p>
+      <h1 id="page-heading">Contact</h1>
+      <p class="reading-width">Interested in software, games, or a business idea? This form demonstrates how visitors could get in touch.</p>
+    </section>
+    <section class="contact-panel" aria-labelledby="form-heading">
+      <h2 id="form-heading">Try the contact form</h2>
+      <p id="form-note">Demonstration only: this form does not send, save, or deliver messages. Name, email, and message are required; phone is optional.</p>
+      <noscript><p>JavaScript is disabled. The demonstration submit button is unavailable, and no information will be sent.</p></noscript>
+      <!-- Native HTML validation runs before the submit handler. No submission service is connected. -->
+      <form id="contact-form" aria-describedby="form-note">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name (required)</label>
+            <input id="name" name="name" type="text" autocomplete="name" required maxlength="100" pattern=".*\S.*" title="Enter a name containing at least one non-space character.">
+          </div>
+          <div class="field">
+            <label for="email">Email (required)</label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-help">
+            <p class="field-help" id="email-help">Use an email address such as name@example.com.</p>
+          </div>
+          <div class="field field-wide">
+            <label for="phone">Phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30" pattern="[+0-9\(\) .\-]{7,30}" title="Use 7–30 characters: digits, spaces, +, parentheses, periods, or hyphens." aria-describedby="phone-help">
+            <p class="field-help" id="phone-help">If provided, use 7–30 characters with at least seven digits. Spaces, +, parentheses, periods, and hyphens are allowed.</p>
+          </div>
+          <div class="field field-wide">
+            <label for="message">Message (required)</label>
+            <textarea id="message" name="message" rows="6" required maxlength="2000" aria-describedby="message-help"></textarea>
+            <p class="field-help" id="message-help">Write a message of up to 2,000 characters. A message containing only spaces is not accepted.</p>
+          </div>
+        </div>
+        <!-- Enabled only after the script installs the no-delivery submit handler. -->
+        <button class="button button-primary" type="submit" disabled>Submit demo</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <!-- 3. Shared footer. No invented contact details. -->
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <p>© 2026 Eno Etuk</p>
+      <p>Developer &amp; Entrepreneur · <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+</body>
+</html>
