@@ -2,11 +2,11 @@
 
 A personal HTML5/CSS3 portfolio for INFR3120 Assignment 1.
 
-## Phase 4 status
+## Phase 5 status
 
 All four pages now contain their planned text and layouts. About uses the supplied biography and labelled photo/video placeholders. Projects presents all four supplied projects with conservative status labels; no prototype, launch, or completed feature is asserted without evidence. Contact is a validation demonstration and does not deliver or save messages.
 
-Personal media, real public contact details, remaining accessibility/link validation, GitHub commits, GitHub Pages deployment, and the final submission package remain incomplete. No lecture examples or separate marking-rubric file were available: the supplied assignment requirements serve as the acceptance checklist. Academic-integrity compliance with the 10% limit remains unestablished. See ATTRIBUTION.md.
+Personal media, real public contact details, and academic-integrity review remain incomplete. Git history starts with the real Phase 5 snapshot; no earlier development commits were fabricated. See TESTING.md for deployment and external validation results. No lecture examples or separate marking-rubric file were available: the supplied assignment requirements serve as the acceptance checklist. Academic-integrity compliance with the 10% limit remains unestablished. See ATTRIBUTION.md.
 
 ## Structure and preview
 
@@ -48,7 +48,7 @@ The hero uses linear-gradient(125deg, #21192f 0%, #0c0c10 65%). Inner-page intro
 
 ## Accessibility and contact form
 
-Implemented: semantic landmarks, heading hierarchy, skip link, visible keyboard focus, active-page indication, descriptive links, responsive media, and reduced-motion support. Placeholder media is explicitly identified. Future real video needs reviewed captions and a transcript. Browser skip-link and form-focus checks passed. Zoom, screen-reader, and WAVE testing remain pending.
+Implemented: semantic landmarks, heading hierarchy, skip link, visible keyboard focus, active-page indication, descriptive links, responsive media, and reduced-motion support. Placeholder media is explicitly identified. Future real video needs reviewed captions and a transcript. Browser skip-link and form-focus checks passed. WAVE reported zero errors and zero contrast errors on all four live pages; reviewed alerts are recorded in TESTING.md. Zoom and screen-reader tests remain pending.
 
 Contact fields have explicit labels and required/optional instructions. Name uses required, maxlength=100, and a pattern requiring a non-space character. Email uses type=email, required, and maxlength=254. Optional phone uses type=tel, maxlength=30, and a pattern allowing common telephone punctuation with escaped parentheses (fixed after browser testing); JavaScript also requires at least seven digits when a value is supplied. This checks basic format, not ownership or whether a phone number exists. Message uses required and maxlength=2000; JavaScript rejects whitespace-only messages. Native browser validation provides localized messages, supplemented by visible help and custom messages for the extra checks.
 
@@ -56,9 +56,32 @@ js/contact.js installs input and submit listeners. Input updates custom validity
 
 About uses an HTML5 video element with controls, preload="none", and a poster. It intentionally has no source until real media is provided; the caption makes this explicit. The placeholder photo's width/height now match its SVG aspect ratio.
 
-## GitHub Pages plan
+## GitHub repository and Pages
 
-Deployment has not occurred. After reviewing implementation, create a public repository, commit genuine completed stages, push the project files, and configure GitHub Pages to publish the appropriate branch and folder. Check all four live pages and relative asset paths, then record the verified URL here. Do not invent earlier commits. Prepare the Canvas ZIP only after remaining requirements and tests are complete.
+- Public repository: https://github.com/eboabasietuk-rgb/eno-portfolio
+- Pages address: https://eboabasietuk-rgb.github.io/eno-portfolio/
+- Configuration: Deploy from a branch, main, / (root); HTTPS enabled.
+- index.html is at the repository root; relative links support the /eno-portfolio/ base path. .nojekyll makes this a plain static deployment.
+
+Git was initialized in this existing project during Phase 5. Initial commit 61dfd40 records the completed implementation snapshot, not fictitious earlier phases. The public repository was created using the already-authorized GitHub CLI account. A repository-local GitHub no-reply commit email protects the configured personal email. Only this repository was changed.
+
+For future updates, review git diff, stage the intended files, commit with an accurate message, and push main. In GitHub Settings → Pages, verify main and / (root). Wait for the Pages build to succeed, then check the live pages. A successful push alone does not prove deployment. See TESTING.md for actual observed results.
+
+## Replace personal media
+
+Place your own files at these paths relative to the project root:
+
+- assets/images/eno-profile.jpg
+- assets/images/eno-intro-poster.jpg
+- assets/video/eno-introduction.mp4 (45–60 seconds)
+- assets/video/eno-introduction.en.vtt (reviewed captions)
+- assets/video/eno-introduction-transcript.txt
+
+Follow assets/video/README.txt to update about.html. Existing placeholders remain intentionally connected until real assets exist. No synthetic photograph or video represents Eno.
+
+## ZIP package
+
+INFR3120_Assignment_1.zip is generated from the final tracked source snapshot, excluding .git, .gitignore, ignored qa evidence, temporary files, and local scripts. It contains the four pages, shared CSS, JavaScript, placeholder assets, media instructions, .nojekyll, and the four documentation files. It is a review package, not submission-ready while personal media and academic-integrity review are outstanding.
 
 ## Attribution and testing
 
@@ -66,6 +89,10 @@ Read ATTRIBUTION.md before using this work for assessment. Read TESTING.md for a
 
 ## Phase 4 validation and readiness
 
-W3C Nu HTML validation returned no messages for all four pages, and W3C CSS validation reported zero errors and warnings. Navigation, responsive layout measurements, and browser contact-form checks passed after correcting the phone pattern. TESTING.md records exact scope and limitations; qa/ retains raw validator responses and a mobile form screenshot.
+W3C Nu HTML validation returned no messages for all four pages, and W3C CSS validation reported zero errors and warnings. Navigation, responsive layout measurements, and browser contact-form checks passed after correcting the phone pattern. TESTING.md records exact scope and limitations. The ignored local qa/ folder retains diagnostic evidence and is excluded from publication and the ZIP.
 
-W3C Link Checker rejects localhost and WAVE could not analyze the local URL, so both remain pending. Manual proofreading found no clear spelling/grammar errors. No publishing occurred. Files are technically deployable to GitHub Pages, but the assignment remains incomplete pending personal media, public contact details, remaining checks, and academic-integrity review.
+Phase 4 external link/accessibility checks were blocked by localhost; Phase 5 live-site results supersede those limitations where stated in TESTING.md. Manual proofreading found no clear spelling/grammar errors. The assignment remains incomplete pending personal media, public contact details, any outstanding checks, and academic-integrity review.
+
+## Live validation summary
+
+The public site returned HTTP 200 for all pages and assets tested. W3C Link Checker reported valid links/anchors. WAVE reported zero errors and zero contrast errors on every page, with reviewed redundant-link, media, and noscript alerts. All 16 live header routes and keyboard demo submission were verified. The implementation is published, but the ZIP remains a review package pending the missing personal items and academic review.
