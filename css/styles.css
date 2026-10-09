@@ -56,7 +56,7 @@ nav a[aria-current="page"] { color: var(--text); text-decoration: underline; tex
 .site-footer { padding-block: 1.5rem; border-top: 1px solid var(--border); font-size: 0.875rem; }
 .footer-layout p { margin-bottom: 0.5rem; }
 .page-intro { padding-block: 4rem; }
-.media-placeholders { max-width: 720px; padding-bottom: 3rem; }
+.personal-media { max-width: 720px; padding-bottom: 3rem; }
 figure { margin: 2rem 0; }
 img, video { display: block; width: 100%; height: auto; border-radius: 10px; }
 figcaption { color: var(--muted); margin-top: 0.75rem; }

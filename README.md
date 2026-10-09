@@ -1,5 +1,11 @@
 # Eno Etuk — Developer & Entrepreneur
 
+## Phase 7 current media status (supersedes earlier placeholder notes)
+
+The real photograph is assets/images/eno-profile.jpg. The supplied 56.26-second introduction is now assets/video/eno-introduction.mp4 (H.264/AAC, 1620×1080, about 8.9 MB), with a real still at assets/images/eno-intro-poster.jpg. About uses controls, playsinline, preload="metadata", and a source of type video/mp4. CSS preserves the 3:2 video aspect ratio. Both obsolete SVG placeholders were removed; no website page references placeholder media. The separate assignment presentation recording is not hosted or included in the website ZIP.
+
+Captions and a reviewed transcript remain missing, as do public contact details and resolution of the assignment’s 10% external-code restriction. Earlier sections describing missing photographs/video are historical. Do not claim the package is fully submission-ready. The Phase 7 source ZIP includes these updated notes.
+
 A personal HTML5/CSS3 portfolio for INFR3120 Assignment 1.
 
 ## Phase 5 status

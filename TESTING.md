@@ -1,5 +1,11 @@
 # Testing record — Phases 4 and 5
 
+## Phase 7 current media status (supersedes earlier placeholder notes)
+
+The real photograph is assets/images/eno-profile.jpg. The supplied 56.26-second introduction is now assets/video/eno-introduction.mp4 (H.264/AAC, 1620×1080, about 8.9 MB), with a real still at assets/images/eno-intro-poster.jpg. About uses controls, playsinline, preload="metadata", and a source of type video/mp4. CSS preserves the 3:2 video aspect ratio. Both obsolete SVG placeholders were removed; no website page references placeholder media. The separate assignment presentation recording is not hosted or included in the website ZIP.
+
+Captions and a reviewed transcript remain missing, as do public contact details and resolution of the assignment’s 10% external-code restriction. Earlier sections describing missing photographs/video are historical. Do not claim the package is fully submission-ready. The Phase 7 source ZIP includes these updated notes.
+
 Tested 2026-10-09 against the existing site served locally at http://127.0.0.1:8765. Nothing was deployed or published. Browser checks used the Codex in-app browser, not a cross-browser or physical-device lab. Supplied assignment requirements were the checklist; no separate rubric or lecture files were provided.
 
 ## Standards and required external checks
@@ -99,3 +105,7 @@ The ZIP is a source review snapshot, not a submission-ready claim. Local qa evid
 ## Real portrait update
 
 The supplied PNG was converted to JPEG at its original 250×312 dimensions. About now uses assets/images/eno-profile.jpg and alt="Portrait of Eno Etuk". Browser checks at 320, 768, and 1440px confirmed the image loaded, rendered at 250×312 without distortion, and caused no horizontal overflow. The introduction video remains a labelled placeholder. Earlier photo-placeholder results above are historical.
+
+## Phase 7 media checks
+
+FFprobe confirmed H.264 video, AAC audio, 1620×1080, and 56.258118 seconds. Local browser testing at 320px showed a 288×192 video, advancing playback time, and no overflow. At 1440px it displayed at 720×480 with playback active and no overflow. Native keyboard play/pause was exercised; the portrait loaded correctly. These are viewport simulations, not physical-phone tests. Audible quality, reviewed captions/transcript, and cross-browser/device coverage remain unverified.
