@@ -101,3 +101,7 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
   .field-wide { grid-column: 1 / -1; }
   .contact-panel { padding: 2rem; }
 }
+
+/* Real portrait: cap at native width and preserve its natural aspect ratio. */
+.profile-photo { width: 100%; max-width: 250px; }
+.profile-photo img { height: auto; border-radius: 10px; box-shadow: 0 0 0 1px var(--border); }

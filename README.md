@@ -4,9 +4,9 @@ A personal HTML5/CSS3 portfolio for INFR3120 Assignment 1.
 
 ## Phase 5 status
 
-All four pages now contain their planned text and layouts. About uses the supplied biography and labelled photo/video placeholders. Projects presents all four supplied projects with conservative status labels; no prototype, launch, or completed feature is asserted without evidence. Contact is a validation demonstration and does not deliver or save messages.
+All four pages now contain their planned text and layouts. About uses the supplied biography and real portrait; the introduction video remains a labelled placeholder. Projects presents all four supplied projects with conservative status labels; no prototype, launch, or completed feature is asserted without evidence. Contact is a validation demonstration and does not deliver or save messages.
 
-Personal media, real public contact details, and academic-integrity review remain incomplete. Git history starts with the real Phase 5 snapshot; no earlier development commits were fabricated. See TESTING.md for deployment and external validation results. No lecture examples or separate marking-rubric file were available: the supplied assignment requirements serve as the acceptance checklist. Academic-integrity compliance with the 10% limit remains unestablished. See ATTRIBUTION.md.
+The introduction video, real public contact details, and academic-integrity review remain incomplete. Git history starts with the real Phase 5 snapshot; no earlier development commits were fabricated. See TESTING.md for deployment and external validation results. No lecture examples or separate marking-rubric file were available: the supplied assignment requirements serve as the acceptance checklist. Academic-integrity compliance with the 10% limit remains unestablished. See ATTRIBUTION.md.
 
 ## Structure and preview
 
@@ -96,3 +96,7 @@ Phase 4 external link/accessibility checks were blocked by localhost; Phase 5 li
 ## Live validation summary
 
 The public site returned HTTP 200 for all pages and assets tested. W3C Link Checker reported valid links/anchors. WAVE reported zero errors and zero contrast errors on every page, with reviewed redundant-link, media, and noscript alerts. All 16 live header routes and keyboard demo submission were verified. The implementation is published, but the ZIP remains a review package pending the missing personal items and academic review.
+
+## Real portrait update
+
+The user-supplied photograph is assets/images/eno-profile.jpg (250×312). The .profile-photo wrapper caps its width at 250px and the image uses height:auto to preserve proportions. Its alt text is Portrait of Eno Etuk. The real photograph is now complete; references to pending personal media apply to the video, poster, captions, and transcript.

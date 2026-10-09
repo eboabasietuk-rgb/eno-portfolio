@@ -95,3 +95,7 @@ Phase 4 W3C HTML (zero messages for each page) and CSS (zero errors/warnings) re
 Real photo, real 45–60-second video, poster, captions/transcript, and public contact details still need the student. Instructor review is required for the extensive attributed AI-generated code; the 10% external-code limit is NOT established. Cross-browser/physical-device, 200% zoom, screen-reader, JavaScript-disabled, maximum-length input and real-video tests remain unperformed. These are distinguished from completed required external services above.
 
 The ZIP is a source review snapshot, not a submission-ready claim. Local qa evidence and development scripts are excluded from the repository/ZIP. No credentials or personal commit email were published; a GitHub no-reply author email was used. Documentation updates are committed after the initial implementation snapshot, reflecting actual work rather than fabricated earlier stages.
+
+## Real portrait update
+
+The supplied PNG was converted to JPEG at its original 250×312 dimensions. About now uses assets/images/eno-profile.jpg and alt="Portrait of Eno Etuk". Browser checks at 320, 768, and 1440px confirmed the image loaded, rendered at 250×312 without distortion, and caused no horizontal overflow. The introduction video remains a labelled placeholder. Earlier photo-placeholder results above are historical.
